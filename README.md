@@ -33,7 +33,16 @@ $ npm run docs:build
 $ mkdir docs/.vuepress
 $ touch docs/.vuepress/config.js
 ```
-### 배포 파일로 생성해서 실행
+
+* config.js 에서 base path 설정
+  ```
+  module.exports = {
+    base: '/vue-press/',
+  };
+  ```
+  [config 참고문서](https://vuepress.vuejs.org/config/)
+
+### 배포 파일 생성해서 실행
 ```
 $ /bin/sh ./deploy.sh
 ```
